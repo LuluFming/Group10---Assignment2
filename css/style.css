@@ -1,0 +1,245 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #071448;
+  width: 100%;
+  height: 100%;
+}
+
+/* G10 Logo */
+.logo-img {
+  text-align: left;
+  height: 3rem;
+  width: 3rem;
+  left: 5%;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  background-color: rgba(21, 144, 27, 0.511);
+  color: #fff;
+  height: 70px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 1.3em;
+  text-decoration: none; 
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+/* Style the footer */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer {
+  background-color: rgba(32, 146, 100, 0.824);
+  padding: 10px;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none; 
+  line-height: 1.8;
+}
+
+.footer a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.footer-company {
+  text-align: center;
+  font-size: 0.5;
+  line-height: 1.6;
+}
+
+.footer-company p{
+  font-size: 0.5em;
+}
+
+ .footer-menu {
+  text-align: center;
+  line-height: 1.8;
+}
+
+
+.main-img {
+  background-image: url(../img/HomeAthelete.png);
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+}
+
+.main-inner {
+  background-color: white; 
+  height: 700px; 
+}
+
+.main-block {
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    background: #1488cc;
+    background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
+    background: linear-gradient(to right, #2b32b2, #1488cc);
+    margin-right: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main-block h4{
+  font-size: 1.8rem;
+}
+
+.main-block p{
+  font-size: 1.4rem;
+}
+
+.main-button {
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
+    transition: all 0.2s ease-in;
+    text-decoration: none;  
+    position: absolute; 
+    left: 3%;
+}
+
+.main-button-container {
+  padding: 3rem 2rem 3rem 3rem;
+}
+  
+.main-button:hover {
+    box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
+} 
+
+.quote-img {
+  background-color:hsl(180, 20%, 90%);
+  height: 400px;
+  background-size: cover;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .navbar a {
+    font-size: 90%;
+    text-decoration: none; 
+  }
+
+  .main-img {
+    background-image: url(../img/HomeAthlete2.jpg);
+    width: 100%;
+    height: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .main-block h4{
+    display: block;
+    font-size: 90%;
+  }
+  .main-block p{
+    display: block;
+    font-size: 90%;
+  }
+  .main-button {
+    padding: 0.8rem 1.6rem;
+    border-radius: 15px;
+    font-size: 0.6rem;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+  .navbar a {
+    padding: 5px;
+    font-size: 60%;
+    text-decoration: none; 
+  }
+
+  .main-img {
+    background-image: url(../img/HomeAthlete3.jpg);
+    width: 100%;
+    height: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .main-block h4{
+    display: block;
+    font-size: 50%;
+  }
+  .main-block p{
+    display: block;
+    font-size: 50%;
+  }
+
+  .main-button {
+    padding: 0.8rem 1.6rem;
+    border-radius: 15px;
+    font-size: 0.6rem;
+}
+
+.footer-company {
+  font-size: 40%;
+}
+
+.footer-company p{
+  font-size: 40%;
+}
+}
