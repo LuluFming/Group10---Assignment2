@@ -1,3 +1,10 @@
+/*
+  GROUP: Lulu Fokming, Francisco Reyes, Anri Ferris
+  Author: Lulu Fokming
+  DATE 9/25/2022  
+  DESCRIPTION: This is ISM6225.360F22  Assignment1
+*/
+
 *{
   box-sizing: border-box;
   padding: 0;
@@ -62,7 +69,7 @@ color: aliceblue;
   color: #444;
   margin: 2% 2% 2% 2%;
 }
-.team p{
+.team p{service-right-img-inner
   font-size: 1.4em;
   color: #444;
   margin-left: 20%;
@@ -242,8 +249,7 @@ color: aliceblue;
 
     .logoimg {
       width:40px;
-       height:40px;
-        
+       height:40px;       
       }
     
 }
