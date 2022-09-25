@@ -1,3 +1,11 @@
+/*
+  GROUP: Lulu Fokming, Francisco Reyes, Anri Ferris
+  Author: Lulu Fokming
+  DATE 9/30/2022
+  DESCRIPTION: This is ISM6225.360F22  Assignment2
+*/
+
+
 let athletecounts=setInterval(athletes);
 let athlete_upto=0;
 let athlete_target_val=0;
