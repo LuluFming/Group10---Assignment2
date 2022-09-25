@@ -11,6 +11,7 @@
   <link rel="icon" type="image/x-icon" href="../img/logo.ico">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/about.css">
+  <script src="../js/about.js"></script>
 </head>
 <body>
   <!-- Navigation Bar-->
@@ -31,8 +32,8 @@
 
    <!-- MAIN PAGE SECTION--> 
   <div class="about-banner-img">
-    <div class="about-banner" id="about">
-      <h1>ABOUT US</h1>
+    <div class="about-banner">
+      <h1>WHAT WE DO</h1>
       <h3>We put our expertise and skills to to help you achieve the results you want to see</h3>
     </div>
   </div>
@@ -41,15 +42,21 @@
     <h1>OUR STATS</h1>
     <section class="container-about  container-stats">
         <div class="card-stat">
-            <h2><b>30K</b></h2> 
-            <p>ATHLETES</p> 
+          <h2>
+            <div id="athletecounter" athlete-target="300" athlete-type="K">0</div>
+          </h2>
+          <p>ATHLETES</p> 
         </div>
         <div class="card-stat">
-            <h2><b>20+</b></h2> 
-            <p>SPORTS</p> 
+          <h2>
+            <div id="sportscounter" sports-target="40" sports-type="+">0</div>
+          </h2> 
+          <p>SPORTS</p> 
         </div>
         <div class="card-stat">
-            <h2><b>95%</b></h2> 
+          <h2>
+            <div id="potentialcounter" potential-target="95" potential-type="%">0</div>   
+          </h2>
             <p>IMPROVE POTENTIAL</p> 
         </div>   
     </section>
@@ -74,11 +81,11 @@
                       <p>
                         Born and raised in South Africa and completed my Bachelor of Commerce, I set off to USA to participate in seeking out the millennium bug. I am a passionate Test Engineer with more than a decade of experience in Quality Assurance.  When not working, I enjoy travelling, baking and try very hard to be a hopeful gardener.
                       </p> <br>
-                      <P>I am given the joy of show casing our team and our values in the About us page. I additionally designed the service page, footer and provide GIT training.
+                      <P>I am given the joy of show casing our team and our values in the About us page. I additionally designed the services page, footer and provide GIT training. I added javascript on Services page for slides and About page for stats counter.
                       </P>
      
                     </div>
-                    <a href="#about">My Contribution Page</a>
+                    <a href="services.html">My Contribution Page</a>
                 </div>
             </div>
         </div>
@@ -107,7 +114,7 @@
                           Unfortunately due to Covid, I had to drop the course.
                         </p>
                     </div>
-                    <a href="services.html">My Contribution Page</a>
+                    <a href="about.html">My Contribution Page</a>
                 </div>
             </div>
         </div>
