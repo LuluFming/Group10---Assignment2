@@ -1,8 +1,8 @@
 /*
   GROUP: Lulu Fokming, Francisco Reyes, Anri Ferris
   Author: Lulu Fokming
-  DATE 9/25/2022  
-  DESCRIPTION: This is ISM6225.360F22  Assignment1
+  DATE 9/30/2022  
+  DESCRIPTION: This is ISM6225.360F22  Assignment2
 */
 
 * {
@@ -11,159 +11,145 @@
 /* Header*/
 .service-header{
   text-align: center;
-  font-size: 35px;
-  color: teal;
-  padding: 10px;
+  /*font-size: 20px;*/
+  padding: 2px;
+  height: auto;
 }
-.service-header p{
-  font-size: 70%;
+
+.service-header h2{
+  font-size: 40px;
   color: #504c4c;
-
+  color: teal;
+  padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Servie panels*/
-.service-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
-  text-align: left;
+.service-header p{
+  font-size: 20px;
+  color: #504c4c;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.service-slide-container {
+  width:90%;
+  position: relative;
+  margin: auto;
+}
+ 
+.service-slide {
+  display: none;
+  width: 100%;
+}
+
+
+.service-container{
+  font-size: 20px;
+  text-align: center;
   line-height: 1.4;
-}
-
-.service-container p{
-  font-size: 80%;
-}
-
-.service-left {
+  padding: 5px;
   background-color: #f2f2f3;
-  padding: 35px;
-  flex: 50%;
-  height: 500px;
 }
 
-.service-left-img {
-  background-color: white;
-  padding: 40px;
-  flex: 50%;
-  height: 500px;
-}
-
-.service-left h3{
+.service-container h3{
+  padding: 2px;
   color:#1488cc;
 }
 
-.service-right h3{
-  color:#1488cc;
+
+.service-img-inner{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
 }
 
-.service-right a{
-  font-size: 35%;
-
-}
-
-.service-right dl{
-  font-size: 80%;
-}
-
-
-.service-right {
-  background-color: white;
-  padding: 40px;
-  flex: 50%;
-  height: 500px;
-}
-
-.service-right-img {
-  background-color: #f2f2f3;
-  padding: 35px;
-  flex: 50%;
-  height: 500px;
-}
-
-/*Service images*/
-.service-img{
-  background-image: #f2f2f3;
+.service-img-inner img {
+  width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: auto auto;
 }
 
-.service-img1 {
-  background-image: url("../img/service1.jpeg");
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: #C0C0C0;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  transition: 0.6s ease;
+  user-select: none;
 }
 
-.service-img2 {
-  background-image: url("../img/service2.jpeg");
-
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.service-img3 {
-  background-image: url("../img/service3.jpeg");
+/* on hover over for arrows, background color will show to be able to view the next and previous arrows*/
+.prev:hover, .next:hover {
+  background-color:  #00b4c5;;
 }
 
-.service-img4 {
-  background-image: url("../img/service4.jpeg");
+/* For the dots for manual navigation of slides */
+.dot {
+  display: inline-block;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
 }
 
-.divider {
-    background:#f2f2f3;
-    height: 5px;
-    width: 100%;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-@media (max-width: 1024px) {
-  .service-right, .service-left {
-    flex: 100%;
-  }
-
+/* Gives the effect of slide fading in and out. Set timing of the fade in and out */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.3s;
 }
+/*Gradually move from transparent to less transparent to see the slides*/
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
 /* mobile*/
 @media (max-width: 450px) {
   .service-header{
-    font-size: 95%;
+    font-size: 80%;
   }
-
-  .service-container {
-    font-size: 95%
+  .service-container{
+    padding: 10px;
+    font-size: 80%;
   }
-
   
-.divider {
-    background:white;
-    height: 0px;
-}
-.service-left {
-  background-color: #f2f2f3;
-  height: 50%
-}
+  .service-header h2{
+    font-size: 100%;
+  }
+  
+  .service-header p{
+    font-size: 60%;
 
-.service-left-img {
-  background-color: white;
-  padding: 0px;
-  height: 0px;
-
- }
-.service-right{
-  background-color: white;
-  height: 50%;
-}
-
-.service-right-img {
- background-color: white;
- padding: 0px;
- height: 0px;
-
-}
-
-/*Service images*/
-.service-img{
-  background-image:white;
-  height: 0px;
-}
-.service-right span {
-  display: none;
-}
-
+  }
+  .service-img-inner{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+  }
+  
 }
