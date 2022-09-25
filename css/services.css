@@ -18,7 +18,6 @@
 
 .service-header h2{
   font-size: 40px;
-  color: #504c4c;
   color: teal;
   padding: 0;
   margin: 0;
@@ -61,14 +60,18 @@
 .service-img-inner{
   display: block;
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 45%;
 }
 
 .service-img-inner img {
   width: 100%;
   height: 100%;
   margin: auto auto;
+}
+
+.service-container-inner a{
+  font-size: 80%;
 }
 
 
@@ -126,6 +129,40 @@
   to {opacity: 1}
 }
 
+.Service-Contact {
+  background-color: #edf2f9!important;
+  height: 250px;
+  background-size: cover;
+  text-align: center;
+  margin-top: 20px;
+  color: #911a6c;
+  }
+
+  .Service-Contact h1{
+    padding-top: 20px;
+  }
+
+  .service-button
+  {
+    position: relative;
+    padding: 10px 50px;
+    margin: 0px 10px 10px 0px;
+    float: center;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;	
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    transition: all 0.1s;
+  }
+
+  .service-button:active
+{
+	transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
 
 /* mobile*/
 @media (max-width: 450px) {
@@ -151,5 +188,13 @@
     width: 90%;
     height: 90%;
   }
+  .Service-Contact {
+    height: 90%
+    font-size: 60%;
+  }
   
+  .service-button
+  {
+    font-size: 80%;
+  }
 }

@@ -47,7 +47,8 @@ color: aliceblue;
   perspective: 800px;
   width: auto;
   height: 250px;
-  flex:1
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .main {
@@ -69,6 +70,7 @@ color: aliceblue;
   color: #444;
   margin: 2% 2% 2% 2%;
 }
+
 .team p{service-right-img-inner
   font-size: 1.4em;
   color: #444;
@@ -216,7 +218,7 @@ color: aliceblue;
 
 @media only screen and (max-width: 768px) {  
   .about-banner h1 {
-    font-size: 3em;
+    font-size: 2.3em;
   }
   .about-banner h3 {
     font-size: 0.8em;
@@ -231,9 +233,9 @@ color: aliceblue;
   .card-stat {
     width: 94.5%;
     float: center;
-    width: auto;
     margin: 3% 2% 4% 2%;
   }
+
   .member-back p {
     font-size: 0.8em;
   }
